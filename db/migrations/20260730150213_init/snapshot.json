@@ -1,0 +1,586 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "id": "dc6816e5-7e50-440f-8981-ec289215ce42",
+  "prevIds": ["00000000-0000-0000-0000-000000000000"],
+  "ddl": [
+    {
+      "name": "credit",
+      "entityType": "tables"
+    },
+    {
+      "name": "environment",
+      "entityType": "tables"
+    },
+    {
+      "name": "gallery",
+      "entityType": "tables"
+    },
+    {
+      "name": "link",
+      "entityType": "tables"
+    },
+    {
+      "name": "owner",
+      "entityType": "tables"
+    },
+    {
+      "name": "owner_site",
+      "entityType": "tables"
+    },
+    {
+      "name": "photo",
+      "entityType": "tables"
+    },
+    {
+      "name": "site",
+      "entityType": "tables"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "key",
+      "entityType": "columns",
+      "table": "credit"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "title",
+      "entityType": "columns",
+      "table": "credit"
+    },
+    {
+      "type": "text",
+      "notNull": false,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "description",
+      "entityType": "columns",
+      "table": "credit"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "owner_key",
+      "entityType": "columns",
+      "table": "credit"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "key",
+      "entityType": "columns",
+      "table": "environment"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "config",
+      "entityType": "columns",
+      "table": "environment"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "key",
+      "entityType": "columns",
+      "table": "gallery"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "name",
+      "entityType": "columns",
+      "table": "gallery"
+    },
+    {
+      "type": "text",
+      "notNull": false,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "description",
+      "entityType": "columns",
+      "table": "gallery"
+    },
+    {
+      "type": "integer",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "visible",
+      "entityType": "columns",
+      "table": "gallery"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "key",
+      "entityType": "columns",
+      "table": "link"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "uri",
+      "entityType": "columns",
+      "table": "link"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "type",
+      "entityType": "columns",
+      "table": "link"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "name",
+      "entityType": "columns",
+      "table": "link"
+    },
+    {
+      "type": "text",
+      "notNull": false,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "style",
+      "entityType": "columns",
+      "table": "link"
+    },
+    {
+      "type": "text",
+      "notNull": false,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "site_key",
+      "entityType": "columns",
+      "table": "link"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "key",
+      "entityType": "columns",
+      "table": "owner"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "name",
+      "entityType": "columns",
+      "table": "owner"
+    },
+    {
+      "type": "text",
+      "notNull": false,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "pronouns",
+      "entityType": "columns",
+      "table": "owner"
+    },
+    {
+      "type": "text",
+      "notNull": false,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "icon",
+      "entityType": "columns",
+      "table": "owner"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "key",
+      "entityType": "columns",
+      "table": "owner_site"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "uri",
+      "entityType": "columns",
+      "table": "owner_site"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "type",
+      "entityType": "columns",
+      "table": "owner_site"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "owner_key",
+      "entityType": "columns",
+      "table": "owner_site"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "site_key",
+      "entityType": "columns",
+      "table": "owner_site"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "key",
+      "entityType": "columns",
+      "table": "photo"
+    },
+    {
+      "type": "text",
+      "notNull": false,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "name",
+      "entityType": "columns",
+      "table": "photo"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "uri",
+      "entityType": "columns",
+      "table": "photo"
+    },
+    {
+      "type": "integer",
+      "notNull": true,
+      "autoincrement": false,
+      "default": "true",
+      "generated": null,
+      "name": "visible",
+      "entityType": "columns",
+      "table": "photo"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "owner_key",
+      "entityType": "columns",
+      "table": "photo"
+    },
+    {
+      "type": "text",
+      "notNull": false,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "gallery_key",
+      "entityType": "columns",
+      "table": "photo"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "key",
+      "entityType": "columns",
+      "table": "site"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "name",
+      "entityType": "columns",
+      "table": "site"
+    },
+    {
+      "type": "text",
+      "notNull": false,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "icon",
+      "entityType": "columns",
+      "table": "site"
+    },
+    {
+      "type": "text",
+      "notNull": false,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "style",
+      "entityType": "columns",
+      "table": "site"
+    },
+    {
+      "columns": ["owner_key"],
+      "tableTo": "owner",
+      "columnsTo": ["key"],
+      "onUpdate": "NO ACTION",
+      "onDelete": "CASCADE",
+      "nameExplicit": true,
+      "name": "credit_owner_key_fkey",
+      "entityType": "fks",
+      "table": "credit"
+    },
+    {
+      "columns": ["site_key"],
+      "tableTo": "site",
+      "columnsTo": ["key"],
+      "onUpdate": "NO ACTION",
+      "onDelete": "CASCADE",
+      "nameExplicit": true,
+      "name": "link_site_key_fkey",
+      "entityType": "fks",
+      "table": "link"
+    },
+    {
+      "columns": ["owner_key"],
+      "tableTo": "owner",
+      "columnsTo": ["key"],
+      "onUpdate": "NO ACTION",
+      "onDelete": "CASCADE",
+      "nameExplicit": true,
+      "name": "owner_site_owner_key_fkey",
+      "entityType": "fks",
+      "table": "owner_site"
+    },
+    {
+      "columns": ["site_key"],
+      "tableTo": "site",
+      "columnsTo": ["key"],
+      "onUpdate": "NO ACTION",
+      "onDelete": "CASCADE",
+      "nameExplicit": true,
+      "name": "owner_site_site_key_fkey",
+      "entityType": "fks",
+      "table": "owner_site"
+    },
+    {
+      "columns": ["owner_key"],
+      "tableTo": "owner",
+      "columnsTo": ["key"],
+      "onUpdate": "NO ACTION",
+      "onDelete": "CASCADE",
+      "nameExplicit": true,
+      "name": "photo_owner_key_fkey",
+      "entityType": "fks",
+      "table": "photo"
+    },
+    {
+      "columns": ["gallery_key"],
+      "tableTo": "gallery",
+      "columnsTo": ["key"],
+      "onUpdate": "NO ACTION",
+      "onDelete": "CASCADE",
+      "nameExplicit": true,
+      "name": "photo_gallery_key_fkey",
+      "entityType": "fks",
+      "table": "photo"
+    },
+    {
+      "columns": ["key"],
+      "nameExplicit": true,
+      "name": "credit_key_pkey",
+      "entityType": "pks",
+      "table": "credit"
+    },
+    {
+      "columns": ["key"],
+      "nameExplicit": true,
+      "name": "environment_key_pkey",
+      "entityType": "pks",
+      "table": "environment"
+    },
+    {
+      "columns": ["key"],
+      "nameExplicit": true,
+      "name": "gallery_key_pkey",
+      "entityType": "pks",
+      "table": "gallery"
+    },
+    {
+      "columns": ["key"],
+      "nameExplicit": true,
+      "name": "link_key_pkey",
+      "entityType": "pks",
+      "table": "link"
+    },
+    {
+      "columns": ["key"],
+      "nameExplicit": true,
+      "name": "owner_key_pkey",
+      "entityType": "pks",
+      "table": "owner"
+    },
+    {
+      "columns": ["key"],
+      "nameExplicit": true,
+      "name": "owner_site_key_pkey",
+      "entityType": "pks",
+      "table": "owner_site"
+    },
+    {
+      "columns": ["key"],
+      "nameExplicit": true,
+      "name": "photo_key_pkey",
+      "entityType": "pks",
+      "table": "photo"
+    },
+    {
+      "columns": ["key"],
+      "nameExplicit": true,
+      "name": "site_key_pkey",
+      "entityType": "pks",
+      "table": "site"
+    },
+    {
+      "columns": ["owner_key", "title"],
+      "nameExplicit": true,
+      "name": "credit_title_key",
+      "entityType": "uniques",
+      "table": "credit"
+    },
+    {
+      "columns": ["name"],
+      "nameExplicit": true,
+      "name": "gallery_name_key",
+      "entityType": "uniques",
+      "table": "gallery"
+    },
+    {
+      "columns": ["uri", "site_key"],
+      "nameExplicit": true,
+      "name": "link_uri_key",
+      "entityType": "uniques",
+      "table": "link"
+    },
+    {
+      "columns": ["name"],
+      "nameExplicit": true,
+      "name": "owner_name_key",
+      "entityType": "uniques",
+      "table": "owner"
+    },
+    {
+      "columns": ["uri", "site_key"],
+      "nameExplicit": true,
+      "name": "owner_site_uri_key",
+      "entityType": "uniques",
+      "table": "owner_site"
+    },
+    {
+      "columns": ["uri", "gallery_key"],
+      "nameExplicit": true,
+      "name": "photo_uri_key",
+      "entityType": "uniques",
+      "table": "photo"
+    },
+    {
+      "columns": ["name"],
+      "nameExplicit": true,
+      "name": "site_name_key",
+      "entityType": "uniques",
+      "table": "site"
+    },
+    {
+      "value": "\"visible\" IN (0, 1)",
+      "name": "gallery_visible_check",
+      "entityType": "checks",
+      "table": "gallery"
+    },
+    {
+      "value": "\"type\" IN ('internal', 'external')",
+      "name": "link_type_check",
+      "entityType": "checks",
+      "table": "link"
+    },
+    {
+      "value": "\"type\" IN ('internal', 'external')",
+      "name": "owner_site_type_check",
+      "entityType": "checks",
+      "table": "owner_site"
+    },
+    {
+      "value": "\"visible\" IN (0, 1)",
+      "name": "photo_visible_check",
+      "entityType": "checks",
+      "table": "photo"
+    }
+  ],
+  "renames": []
+}
